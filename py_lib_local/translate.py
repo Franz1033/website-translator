@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 def translate_webpage(url, api_key, target_language='hi'):
     # Configure site url
-    SITE_URL = 'https://trilz-hindi.vercel.app'
+    SITE_URL = 'https://website-translator.vercel.app'
 
    # URL for the Google Translate API
     translate_url = 'https://translation.googleapis.com/language/translate/v2'
