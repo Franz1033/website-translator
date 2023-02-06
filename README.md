@@ -10,4 +10,4 @@ This program translates a website one level deep and automatically generates HTM
 6. Finally, run the python project using `python3 main.py`
 
 ### To change target language:
-On line 31 of `main.py` change the `'hi'` parameter inside the `translate_webpage()` function to other supported languages. See the list [here](https://cloud.google.com/translate/docs/languages) 
+On line 31 of `main.py` change the `'hi'` argument inside the `translate_webpage()` function to other supported languages. See the list [here](https://cloud.google.com/translate/docs/languages) 
