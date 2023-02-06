@@ -6,7 +6,7 @@ This program translates a website one level deep and automatically generates HTM
 2. Before reconfiguring, first delete `data.csv` and `html` directory
 3. Open `main.py` and plug in your own Google Cloud API key you can do so [here](https://cloud.google.com/translate)
 4. Also set your target webpage url
-5. Lastly, open the py_lib_local library then open translate.py and change `SITE_URL` to your own live website url, you could use [Vercel](https://vercel.com) for this
+5. Lastly, open the `py_lib_local` library then open `translate.py` and change `SITE_URL` to your own live website url, you could use [Vercel](https://vercel.com) for this
 6. Finally, run the python project using `python3 main.py`
 
 ### To change target language:
