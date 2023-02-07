@@ -19,7 +19,7 @@ def scrape_webpage(url):
 
     # Find all anchor elements
     # Note: To look for specific element attrs use attrs = {'id':'example'} as argument
-    anchor_elements = soup.findAll('a')
+    anchor_elements = soup.findAll('a', href=True)
 
     # Iteratively append all href vals to the links lst
     for index, anchor_element in enumerate(anchor_elements):

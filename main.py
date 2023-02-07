@@ -7,10 +7,10 @@ def main():
     API_KEY = 'AIzaSyA4NMeanx0Cx5rsVmqfuyW5Aqa_TafLs0s'
 
     # Webpage URL
-    URL = 'https://www.trilz.io'
+    TARGET_URL = 'https://www.trilz.io'
     
     # Scrape webpage links
-    scrape.scrape_webpage(URL)
+    scrape.scrape_webpage(TARGET_URL)
 
     # Read the data from the CSV file
     df = pd.read_csv('data.csv')
@@ -23,10 +23,10 @@ def main():
         # Check if the link starts with a "/" character
         if link.startswith("/"):
             # If so, add the URL to the beginning of the link
-            link = URL + link
+            link = TARGET_URL + link
 
         # Check if the link starts with the URL
-        if link.startswith(URL):
+        if link.startswith(TARGET_URL):
             # If so, translate webpage
             translated_html = translate.translate_webpage(link, API_KEY, 'hi')
 
